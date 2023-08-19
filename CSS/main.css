@@ -1,0 +1,565 @@
+/* start variables */
+
+/* end variables */
+/* strat global rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* end global rules */
+
+/* start header */
+header {
+    width: 1060px;
+    height: 66.66666666666667px;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    /* filter: blur(2px); */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+header .logo {
+    width: 79.14px;
+    height: 21px;
+    position: relative;
+}
+
+header .logo p {
+    width: 52.49px;
+    height: 20.6px;
+    color: black;
+    /* text-transform: capitalize; */
+    position: absolute;
+    left: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+header .logo .cube-1 {
+    width: 13.73px;
+    height: 13.73px;
+    background-color: rgb(0, 221, 179);
+    opacity: 1;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: absolute;
+    right: 7px;
+}
+
+header .logo .cube-2 {
+    width: 13.73px;
+    height: 13.73px;
+    background-color: rgb(247, 71, 71);
+    opacity: 0.8;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: absolute;
+    right: 0px;
+    top: 6px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+    font-weight: bold;
+    opacity: 0.6;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:focus {
+        opacity: 1;
+    }
+
+}
+
+.download-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 129px;
+    height: 48px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: rgb(0, 221, 179);
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    cursor: pointer;
+    border-color: transparent;
+
+
+    transform:
+        perspective(750px) translate3d(0px, 0px, -10px) scale(0.9, 0.9);
+    transition: 0.4s ease-in-out transform;
+
+    &:hover {
+        transform: translate3d(0px, 0px, -250px);
+    }
+}
+
+/* end header */
+
+/* start center */
+.all-content {
+    width: 1100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.all-content .upper-content h1 {
+    font-size: 56px;
+    margin-bottom: 12px;
+}
+
+.all-content .upper-content h1 span {
+    color: rgb(0, 221, 179);
+}
+
+.all-content .upper-content p {
+    font-size: 24px;
+    margin-bottom: 60px;
+    text-transform: none;
+    opacity: 0.9;
+
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.all-content .video .img-for-video {
+    width: 840px;
+    height: 473px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+
+
+    transform:
+        rotateX(0deg) rotateZ(0deg);
+    transform-style: preserve-3d;
+    border-radius: 32px;
+    box-shadow:
+        -1px 0 px 0 rgba(34, 33, 81, 0.01),
+        0px 0px 28px 0 rgba(34, 33, 81, 0.25);
+    transition:
+        .4s ease-in-out transform,
+        .4s ease-in-out box-shadow;
+
+    &:hover {
+        transform:
+            translate3d(0px, -16px, 0px) rotateX(0deg) rotateZ(0deg);
+        box-shadow:
+            -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+            0px 0px 28px 10px rgba(34, 33, 81, 0.15);
+    }
+}
+
+.all-content .upper-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-content .botton-content h1 {
+    font-size: 56px;
+    margin-bottom: 48px;
+    opacity: 0.9;
+    text-transform: none;
+
+    &:first-letter {
+        text-transform: capitalize;
+    }
+}
+
+.all-content .botton-content a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 186px;
+    height: 50px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: rgb(0, 221, 179);
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    cursor: pointer;
+    border-color: transparent;
+    margin-bottom: 100px;
+
+
+    transform:
+        perspective(750px) translate3d(0px, 0px, -10px) scale(0.9, 0.9);
+    transition: 0.4s ease-in-out transform;
+
+    &:hover {
+        transform: translate3d(0px, 0px, -250px);
+    }
+}
+/* end centre */
+
+/* start footer */
+footer {
+    width: 840px;
+    margin-left: 130px;
+    margin-bottom: 250px;
+    padding: 60px 80px;
+    display: grid;
+    grid-template-columns: 210px 140px 140px 140px 210px;
+    position: relative;
+}
+
+footer header {
+    margin: 0px;
+}
+
+hr {
+    width: 900px;
+    margin-left: -30px;
+    position: absolute;
+    top: 0px;
+    opacity: 0.8;
+}
+
+footer .column-1 {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+}
+
+.column-1 header p {
+    text-transform: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    grid-row: 1/2;
+}
+
+.column-1 header .cube-1 {
+    width: 11.77px;
+    height: 11.77px;
+    background-color: rgb(0, 221, 179);
+    opacity: 1;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: absolute;
+    left: 50px;
+    top: 24px;
+}
+
+.column-1 header .cube-2 {
+    width: 11.77px;
+    height: 11.77px;
+    background-color: rgb(247, 71, 71);
+    opacity: 0.8;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: absolute;
+    left: 55px;
+    top: 29px;
+}
+
+.column-1 .row-2 {
+    grid-row: 2/3;
+    font-size: 16px;
+    opacity: 0.9;
+    margin-top: -19px;
+}
+
+.column-1 .row-3 {
+    grid-row: 3/4;
+    font-size: 16px;
+    opacity: 0.9;
+    margin-top: -19px;
+}
+
+.column-1 .row-4 {
+    grid-row: 4/5;
+    font-size: 16px;
+    opacity: 0.9;
+    margin-top: -19px;
+}
+
+
+
+
+
+footer .column-2 {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 24px;
+}
+
+.column-2 header p {
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    grid-row: 1/2;
+}
+
+.column-2 .row-1,
+.column-2 .row-2,
+.column-2 .row-3,
+.column-2 .row-4 {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    opacity: 0.8;
+    transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+
+
+
+        &:hover {
+            opacity: 1;
+        }
+}
+
+.column-2 .row-1 {
+    grid-row: 2/3;
+}
+
+.column-2 .row-2 {
+    grid-row: 3/4;
+}
+
+.column-2 .row-3 {
+    grid-row: 4/5;
+}
+
+.column-2 .row-4 {
+    grid-row: 5/6;
+}
+
+
+
+
+
+footer .column-3 {
+    grid-column: 3/4;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 24px;
+}
+
+.column-3 header p {
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    grid-row: 1/2;
+}
+
+.column-3 .row-1,
+.column-3 .row-2,
+.column-3 .row-3,
+.column-3 .row-4 {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    opacity: 0.8;
+    transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+
+
+
+        &:hover {
+            opacity: 1;
+        }
+}
+
+.column-3 .row-1 {
+    grid-row: 2/3;
+}
+
+.column-3 .row-2 {
+    grid-row: 3/4;
+}
+
+.column-3 .row-3 {
+    grid-row: 4/5;
+}
+
+.column-3 .row-4 {
+    grid-row: 5/6;
+}
+
+
+
+
+
+footer .column-4 {
+    grid-column: 4/5;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 24px;
+}
+
+.column-4 header p {
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    grid-row: 1/2;
+}
+
+.column-4 .row-1,
+.column-4 .row-2,
+.column-4 .row-3,
+.column-4 .row-4 {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: black;
+        opacity: 0.8;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+
+
+
+        &:hover {
+            opacity: 1;
+        }
+}
+
+.column-4 .row-1 {
+    grid-row: 2/3;
+}
+
+.column-4 .row-2 {
+    grid-row: 3/4;
+}
+
+.column-4 .row-3 {
+    grid-row: 4/5;
+}
+
+.column-4 .row-4 {
+    grid-row: 5/6;
+}
+
+
+
+
+
+footer .column-5 {
+    grid-column: 5/6;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    /* row-gap: 24px; */
+}
+
+.column-5 .reddit,
+.column-5 .twitter,
+.column-5 .youtube {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: #04ddb2;
+    position: absolute;
+    z-index: 2000;
+    right: 110px;
+    margin-top: 23px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    */transform:        perspective(750px) translate3d(0px, 0px, -10px) scale(0.9, 0.9);
+    transition: 0.4s ease-in-out transform;
+    
+    &:hover {
+        transform: translate3d(0px, 0px, -250px);
+    }
+}
+
+
+.column-5 .reddit img,
+.column-5 .twitter img,
+.column-5 .youtube img {
+    width: 30px;
+    margin: 15px;
+}
+
+.column-5 .reddit {
+    grid-row: 1/2;
+}
+
+.column-5 .twitter {
+    grid-row: 2/3;
+}
+
+.column-5 .youtube {
+    grid-row: 3/4;
+}
